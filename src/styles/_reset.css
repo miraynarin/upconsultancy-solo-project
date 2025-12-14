@@ -1,0 +1,78 @@
+/* Reset.css - Temel stil sıfırlama */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%; 
+    -moz-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+    text-size-adjust: 100%; 
+}
+
+body {
+   
+    line-height: 1.5;
+    background-color: #000000;
+
+}
+
+/* Görünmeyen öğeler */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Form elemanları */
+button,
+input,
+select,
+textarea {
+    background: transparent;
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Görünüm için bazı iyileştirmeler */
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+iframe {
+    border: none;
+}
+
+/* HTML5 semantik elemanlar için stil */
+header,
+footer,
+section,
+article,
+nav,
+aside,
+main {
+    display: block;
+}
+
+/* Flexbox için sıfırlama */
+* {
+    display: flex;
+}
+
