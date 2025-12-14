@@ -19,6 +19,7 @@ body {
    
     line-height: 1.5;
     background-color: #000000;
+    
 
 }
 
@@ -71,8 +72,5 @@ main {
     display: block;
 }
 
-/* Flexbox için sıfırlama */
-* {
-    display: flex;
-}
+
 

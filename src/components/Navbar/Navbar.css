@@ -1,4 +1,14 @@
-.logo{
-    background-color: black;
-    color: var(--color-primary);
+header{
+    display:flex;
 }
+
+.logo {
+    background-color: black;
+    color: var(--primary-color);
+    font-weight: 800;
+    margin-right:70px;
+}
+.logo1{
+    color:var(--white-color);
+    margin-right:70px;
+  }
