@@ -1,14 +1,31 @@
-header{
-    display:flex;
+header.navbar{
+  display: flex;
+  align-items: center; 
+  background-color: black;
+  width: 1191px;
+  height: 49px;
+  margin: 0 auto;
+  margin-top:30px;
 }
-
-.logo {
-    background-color: black;
+.logo{
     color: var(--primary-color);
     font-weight: 800;
-    margin-right:70px;
+    margin-right: 50px;
 }
-.logo1{
-    color:var(--white-color);
-    margin-right:70px;
-  }
+.navbar-group {
+    display: flex;
+    align-items: center;
+    gap: 585px; 
+}
+.menu {
+    display: flex;
+    gap: 60px;
+}
+.btn-getstarted {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    
+}
