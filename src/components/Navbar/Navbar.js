@@ -11,6 +11,7 @@ const Navbar = () => {
                 <div class="frame">Blog</div>
                 <div class="frame">Login</div>
             </div>
+            <div class="hamburger" id="hamburgerIcon"> ☰ </div>
             <button class="btn-getstarted">Get Started</button>
         </div>
     </header> `
