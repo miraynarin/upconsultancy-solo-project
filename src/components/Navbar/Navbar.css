@@ -1,11 +1,32 @@
 /* miray/UP-4-5-Implement-The-Navbar-Responsive-Start */
-header.navbar{
+.header-container{
+width: 100%;
+background-color: var(--black-color);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navbar{
   display: flex;
   align-items:center;
-  background-color: black;
-  width: 1191px;
+  justify-content: space-between;
+  width: 100%;
   height: 49px;
-  padding:15px 90px;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  .navbar-left-area{
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+  }
+  .navbar-right-area{
+    
+    display: flex;
+    align-items: center;
+    gap: 40px;
   }
 .logo{
     color: var(--primary-color);
@@ -15,7 +36,6 @@ header.navbar{
 }
 .navbar-group {
     position: relative;
-    
     display: flex;
     align-items: center;
     gap: 300px; 
@@ -30,7 +50,7 @@ header.navbar{
     color: var(--white-color);
     border-radius: 6px;
     padding: 8px 20px;
-    font-weight: 600px;
+    font-weight: 300px;
     margin-top:10px;
 }
 .btn-getstarted:hover{
@@ -43,8 +63,14 @@ header.navbar{
 .hamburger{
     display: none;
 }
+@media (max-width:1250px) {
+    .navbar{
+        padding: 0 20px;
+    }
+}
 
 @media (max-width:768px){
+   
     header.navbar{
        height: auto;
        padding:15px;
@@ -56,9 +82,34 @@ header.navbar{
     }
     .menu{
         display: none;
+        top:50px;
+        flex-direction: column;
+    }
+    .menu.active{
+        background-color: var(--black-color);
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top:60px;
+        left: 0;
+        width: 100%;
+        gap:20px;
+        padding: 20px 0;
+        align-items: center;
+    }
+   
+    .navbar-right-area{
+        display: flex;
+        gap:15px;
     }
     .hamburger{
         display: block;
+        cursor: pointer;
+        font-size:25px;
+        color: var(--primary-color);   
+    }
+    .hamburger:hover{
+        color: var(--white-color);
     }
 }
 /* miray/UP-4-5-Implement-The-Navbar-Responsive-End */
