@@ -6,6 +6,7 @@
     margin:40px auto;
     padding:0 20px;
     background-color: var(--white-color);
+     margin-bottom: 0px;
 }
 .services-content{
     color:var(--black-color);
@@ -44,6 +45,12 @@
     margin-top:12px;
     font-size:22px;
     font-family:var(--secondary-font);       
+}
+.services-card-text{
+    font-family: var(--primary-font);
+    font-size:16px;
+    margin-top:12px;
+    
 }
 @media (max-width: 1024px) {
     .services-grid {

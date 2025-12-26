@@ -1,0 +1,45 @@
+.number-section{
+    margin: 0 auto;
+    margin-top: 0;
+    background-color: var(--white-color);
+}
+.number-content{
+    color: var(--black-color);
+  
+ 
+}
+.number-first-title{
+    
+    color:var(--primary-color);
+    text-align: center;
+}
+.number-title{
+    text-align: center;
+    margin-top:18px;
+}
+.number-text{
+    text-align: center;
+    margin-top:16px;
+    font-size: 18px;
+    color:var(--dark-gray);
+}
+.number-value-part{
+    color:var(--black-color);
+   display: flex;
+    flex-direction: row;
+  justify-content: center;
+  gap:150px;
+  font-family: var(--secondary-font);
+    
+}
+.number-value{
+    color:var(--primary-color);
+    text-align: center;
+    font-size: 32px;
+    
+}
+.number-value h3 {
+    color:var(--dark-gray);
+    font-family: var(--primary-font);
+    font-size:18px;
+}
