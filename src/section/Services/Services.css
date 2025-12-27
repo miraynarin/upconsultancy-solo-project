@@ -48,6 +48,7 @@
 }
 .services-card-text{
     font-family: var(--primary-font);
+    color:var(--dark-gray);
     font-size:16px;
     margin-top:12px;
     
