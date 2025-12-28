@@ -7,7 +7,7 @@
 .feature-content{
     max-width: 1200px;
     width: 100%;
-    margin:0 auto;
+    margin:107px auto;
     font-family: 'Inter';
     
 }
@@ -15,12 +15,13 @@
     color:var(--primary-color);
     margin-bottom:15px;
     font-family: var(--primary-font);
-    transform: translateY(120px);
+   
 }
 .feature-second-content{
     display: flex;
     justify-content: space-between;
-    margin-top:200px;
+    align-items: center;
+    margin-top:40px;
     background-color: var(--white-color);
 }
 .feature-icon{
@@ -29,28 +30,31 @@
     background-color: var(--white-color);
 }
 .icon{
-    font-size: 10px;
+    width: 60px;
+    height: 60px;
 }
 
 .feature-title{
     margin-bottom:20px;
-    transform: translateY(110px);
+    
 }
 .feature-text{
     color:var(--dark-gray);
-    transform: translateY(110px);
+    
 }
 .feature-image{
     width: 554px;
     height: 580px;
 }
-.title{
-    margin-left: 80px;
-    transform: translateY(-70px);
-    margin-bottom: 12px;
+.icon-container{
+    display: flex;
+
+}
+.text-container{
+    margin-left: 20px;
+    
 }
 .text{
-  margin-left: 80px;
-  transform: translateY(-70px);
+  
   color:var(--dark-gray);
 }

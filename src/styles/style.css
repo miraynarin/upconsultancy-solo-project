@@ -10,7 +10,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: black;
+  
   --primary-color: #26BB74;
   --gray-color: #C0C0C0;
   --white-color: #FFFFFF;
@@ -19,9 +19,6 @@
   --dark-gray: #6C757D;
   --primary-font: 'Inter', sans-serif;
   --secondary-font: 'Plus Jakarta Sans' , sans-serif;
-  
-
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
