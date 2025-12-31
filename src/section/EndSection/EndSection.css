@@ -10,19 +10,26 @@
     text-align: center;
 }
 .faq-title{
+    margin-top:107px;
     color:var(--primary-color);
     text-align: center;
+    font-family: var(--primary-color);
+    font-size:18px;
     
 }
 .faq-text{
     margin-top:20px;
+    font-family: var(--secondary-font);
+    font-size:32px;
 }
 .question{
-  
     display: flex;
     justify-content: space-between;
     border-radius: 5px;
     border: 1px solid var(--border-color);
+    font-family: var(--primary-color);
+    font-size:20px;
+    padding: 22px 30px 22px 30px;
 }
 .faq-question{
     margin-top:38px;
