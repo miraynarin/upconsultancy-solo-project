@@ -63,3 +63,18 @@
     text-align: center;
     margin-top:107px;
 }
+@media (max-width: 768px) {
+  .pricing-container-box {
+    gap: 12px;       
+  }
+
+  .container-text-box{
+    width: 28%;        
+    min-width: 200px;  
+    padding: 15px;
+  }
+
+  .pricing-button{
+    width: 90%;        
+  }
+}
