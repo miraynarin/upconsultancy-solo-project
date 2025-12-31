@@ -6,6 +6,7 @@ import Number from "../../section/Number/Number";
 import Features from "../../section/Features/Features";
 import MoreFeature from "../../section/MoreFeatures/MoreFeatures";
 import Pricing from "../../section/Pricing/Pricing";
+import EndSection from "../../section/EndSection/EndSection";
 
 const HomePage = () => {
   const container = document.createElement("div");
@@ -16,6 +17,7 @@ const HomePage = () => {
   const features = Features();
   const moreFeature = MoreFeature();
   const pricing = Pricing();
+  const endSection = EndSection();
   container.appendChild(navbar);
   container.appendChild(heroSection);
   container.appendChild(services);
@@ -23,6 +25,7 @@ const HomePage = () => {
   container.appendChild(features);
   container.appendChild(moreFeature);
   container.appendChild(pricing);
+  container.appendChild(endSection);
   return container;
 };
 export default HomePage;

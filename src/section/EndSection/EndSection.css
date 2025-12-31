@@ -1,0 +1,33 @@
+.faq-section{
+     margin: 40px auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.faq-container{
+    margin-top:30px;
+    color:var(--black-color);
+    text-align: center;
+}
+.faq-title{
+    color:var(--primary-color);
+    text-align: center;
+    
+}
+.faq-text{
+    margin-top:20px;
+}
+.question{
+  
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+.faq-question{
+    margin-top:38px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    
+}
