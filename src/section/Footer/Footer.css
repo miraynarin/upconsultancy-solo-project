@@ -1,0 +1,21 @@
+.footer-section{
+    margin: 40px auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.footer-container{
+    margin-top:147px;
+    color:var(--black-color);
+    display: flex;
+    justify-content: space-between;
+}
+.footer-second{
+    display: flex;
+    justify-content: baseline;
+    gap:30px;
+}
+.footer-title{
+color:var(--primary-color);
+margin-bottom:15px;
+}
