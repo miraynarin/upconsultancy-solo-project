@@ -41,6 +41,13 @@ font-size:25px;
 .footer-contact p{
     margin-bottom: 5px;
 }
+.footer-end{
+  margin-top:50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: black;
+}
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;

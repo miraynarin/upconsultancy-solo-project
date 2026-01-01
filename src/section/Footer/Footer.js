@@ -29,6 +29,7 @@ const Footer = () => {
    </div>
    </div>
    </div>
+   <div class="footer-end">© 2022 UpConslt. All rights reserved.</div>
    </section>
    
     `;
