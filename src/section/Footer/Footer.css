@@ -18,4 +18,36 @@
 .footer-title{
 color:var(--primary-color);
 margin-bottom:15px;
+font-size:25px;
+}
+.footer-services h5{
+    margin:8px;
+    font-size:18px;
+}
+.footer-services p {
+  margin-bottom: 5px;
+}
+.footer-info h5{
+    margin:8px;
+    font-size:18px;
+}
+.footer-info p{
+    margin-bottom: 5px;
+}
+.footer-contact h5{
+    margin:8px;
+    font-size:18px;
+}
+.footer-contact p{
+    margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-second {
+    justify-content: space-between;
+  }
 }

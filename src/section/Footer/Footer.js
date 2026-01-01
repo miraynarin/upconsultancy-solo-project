@@ -10,21 +10,22 @@ const Footer = () => {
    </div>
    <div class="footer-second">
    <div class="footer-services">
-   <p>Services</p>
+   <h5>Services</h5>
    <p>Business Start-up</p>
    <p>Small Business</p>
    <p>Business Start-up</p>
    </div>
    <div class="footer-info">
-   <p>Info</p>
+   <h5>Info</h5>
    <p>Client</p>
    <p>Event</p>
    <p>Careers</p>
    </div>
-
-   <div class="footer-contact">
-   <p>Contact</p>
-   <p>South Jakarta - Indonesia<br>+0628-2267-9981<br>contact@upconslt.com</p>
+  <div class="footer-contact">
+   <h5>Contact</h5>
+   <p>South Jakarta - Indonesia</p>
+   <p>+0628-2267-9981</p>
+   <p>contact@upconslt.com</p>
    </div>
    </div>
    </div>
