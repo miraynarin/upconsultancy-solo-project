@@ -1,6 +1,6 @@
 .number-section{
-    margin: 0 auto;
-    margin-top: 0;
+    margin: 50px auto;
+  
     background-color: var(--white-color);
 }
 .number-content{

@@ -3,11 +3,12 @@
     justify-content: center;
     gap:50px;
     flex-direction: column;
-    margin:40px auto;
+    
     padding:0 20px;
-    background-color: var(--black-color)
+    background-color: var(--black-color);
 }
 .hero-section-content{
+    margin:40px auto;
     max-width: 1200px;
     width: 100%;
     background-color: var(--black-color);
@@ -21,6 +22,7 @@
     width: 178px; 
     height: 39px;
     border-radius: 30px;
+    margin-top:50px;
 }
 .hero-section-title{
     font-family: "Plus Jakarta Sans", sans-serif;
