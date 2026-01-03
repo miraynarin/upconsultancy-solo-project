@@ -1,31 +1,116 @@
-header.navbar{
-  display: flex;
-  align-items: center; 
-  background-color: black;
-  width: 1191px;
-  height: 49px;
-  margin: 0 auto;
-  margin-top:30px;
+/* miray/UP-4-5-Implement-The-Navbar-Responsive-Start */
+.header-container{
+width: 100%;
+background-color: var(--black-color);
+display: flex;
+justify-content: center;
+align-items: center;
 }
+
+.navbar{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  width: 100%;
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:15px 0;
+  }
+  .navbar-left-area{
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+  }
+  .navbar-right-area{
+    
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
 .logo{
     color: var(--primary-color);
     font-weight: 800;
+    font-size:20px;
     margin-right: 50px;
 }
 .navbar-group {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 585px; 
+    gap: 300px; 
 }
 .menu {
     display: flex;
     gap: 60px;
+    font-weight: 800;
 }
-.btn-getstarted {
+.btn-getstarted{
     background-color: var(--primary-color);
     color: var(--white-color);
-    border: none;
     border-radius: 6px;
-    padding: 8px 16px;
-    
+    padding: 8px 20px;
+    font-weight: 300px;
+    margin-top:10px;
 }
+.btn-getstarted:hover{
+    background-color: white;
+    color:var(--primary-color);
+}
+.frame:hover{
+    color:var(--primary-color);
+}
+.hamburger{
+    display: none;
+}
+@media (max-width:1250px) {
+    .navbar{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width:768px){
+   
+    header.navbar{
+       height: auto;
+       padding:15px;
+    }  
+    .navbar-group{
+        flex-direction: column;
+        align-items: flex-start;
+        gap:30px;
+    }
+    .menu{
+        display: none;
+        top:50px;
+        flex-direction: column;
+    }
+    .menu.active{
+        background-color: var(--black-color);
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top:60px;
+        left: 0;
+        width: 100%;
+        gap:20px;
+        padding: 20px 0;
+        align-items: center;
+    }
+   
+    .navbar-right-area{
+        display: flex;
+        gap:15px;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        font-size:25px;
+        color: var(--primary-color);   
+    }
+    .hamburger:hover{
+        color: var(--white-color);
+    }
+}
+/* miray/UP-4-5-Implement-The-Navbar-Responsive-End */
