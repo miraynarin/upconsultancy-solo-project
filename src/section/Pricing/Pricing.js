@@ -2,47 +2,80 @@ import "./Pricing.css";
 const Pricing = () => {
   const container = document.createElement("div");
   container.innerHTML = `
-   <section class="pricing-section">
-   <div class="pricing-container">
-   <div class="pricing-text-box">
-   <h3 class="pricing-title">Pricing</h3>
-   <h4 class="pricing-text">Flexible Pricing Plan for Your Startup</h4>
-   <p class="pricing-explanation">Choose the price for your business consultation.</p>
-   </div>
-   <div class="pricing-container-box">
-       <div class="container-text-box">
-       <div class="container-box">
-       <div class="container-box-title">Team
-       <h4 class="container-box-money">$50/mth</h4>
-       <p class="container-box-explanation">Consultation guidance from certified <br> professionals.</p>
-       <p class="container-box-second-explanation">Professional expert guidance<br> 12 hours discussion <br> Live view of business</p>
-       </div>
-       <button class="pricing-button">Get Started</button>
-       </div>
-   
-       <div class="container-text-box">
-       <div class="container-box">
-       <div class="container-box-title">Agency
-       <h4 class="container-box-money">$150/mth</h4>
-       <p class="container-box-explanation">The best consulting guidance,<br> discussion anytime.</p>
-       <p class="container-box-second-explanation">Professional expert guidance <br> 18 hours discussion <br>Live view of business</p>
-       </div>
-       <button class="pricing-button">Get Started</button>
-       </div>
-   
-       <div class="container-text-box">
-       <div class="container-box">
-       <div class="container-box-title">Enterprise
-       <h4 class="container-box-money">$500/mth</h4>
-       <p class="container-box-explanation">Full guidance consultation, get access <br>to all features.</p>
-       <p class="container-box-second-explanation">Professional expert guidance <br> 24 hours discussion <br>Live view of business</p>
-       </div>
-       <button class="pricing-button">Get Started</button>
-       </div>
-   
-   </div>
-   </div>
-   </section>
+  <section class="pricing-section">
+  <div class="pricing-container">
+
+    <div class="pricing-text-box">
+      <h3 class="pricing-title">Pricing</h3>
+      <h4 class="pricing-text">Flexible Pricing Plan for Your Startup</h4>
+      <p class="pricing-explanation">
+        Choose the price for your business consultation.
+      </p>
+    </div>
+
+    <div class="pricing-container-box">
+      <div class="container-text-box">
+
+        
+        <div class="container-box">
+          <div class="container-box-title">
+            <h3>Team</h3>
+            <h4 class="container-box-money">$50/mth</h4>
+            <p class="container-box-explanation">
+              Consultation guidance from certified <br />
+              professionals.
+            </p>
+            <p class="container-box-second-explanation">
+              Professional expert guidance<br />
+              12 hours discussion <br />
+              Live view of business
+            </p>
+          </div>
+          <button class="pricing-button">Get Started</button>
+        </div>
+
+        
+        <div class="container-box">
+          <div class="container-box-title">
+            <h3>Agency</h3>
+            <h4 class="container-box-money">$150/mth</h4>
+            <p class="container-box-explanation">
+              The best consulting guidance,<br />
+              discussion anytime.
+            </p>
+            <p class="container-box-second-explanation">
+              Professional expert guidance <br />
+              18 hours discussion <br />
+              Live view of business
+            </p>
+          </div>
+          <button class="pricing-button">Get Started</button>
+        </div>
+
+        
+        <div class="container-box">
+          <div class="container-box-title">
+            <h3>Enterprise</h3>
+            <h4 class="container-box-money">$500/mth</h4>
+            <p class="container-box-explanation">
+              Full guidance consultation, get access <br />
+              to all features.
+            </p>
+            <p class="container-box-second-explanation">
+              Professional expert guidance <br />
+              24 hours discussion <br />
+              Live view of business
+            </p>
+          </div>
+          <button class="pricing-button">Get Started</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
    
     `;
   return container;

@@ -19,14 +19,18 @@
     gap: 20px;
     margin-top:61px;    
 }
-.container-text-box{
-   background-color:var(--light-gray) ;
-    width: 370px;
-    height: 408px;
-    display: flex;
-    text-align: center;
+.container-box{
+    background-color:var(--light-gray);
+    border:1px solid var(--gray-border-color);
     border-radius: 8px;
-    
+    padding: 30px 35px 45px 32px;
+    text-align: center;
+}
+.container-text-box{
+   display: flex;
+  justify-content: center;   
+  align-items: center;
+  gap: 35px;          
 }
 .container-box-title{
     color:var(--primary-color);
