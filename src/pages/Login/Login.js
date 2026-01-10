@@ -19,8 +19,19 @@ const LoginPage = () => {
      <input type="password" id="password" placeholder="Enter Password" />
      <span id="togglePassword" class="eye-icon">👁️</span>
      </div>
-
+     <label class="remember-checkbox">
+     <input type="checkbox"/>
+     <span class="checkbox-"btn"></span>
+     </label>
+     <span class="remember-text">Remember me</span>
+     <a href="#" class="forgot-password">Forgot password?</a>
      </form>
+     <button class="login-button">Sign in</button>
+     <button class="google-button">Or Sing in with Google</button>
+     <div class="login-footer">
+     <p class="account">Dont have an account?</p>
+     <a href="#" class="sign-up">Sign up now</p>
+     </div>
    </div>
    </section>`;
 
@@ -31,6 +42,7 @@ const LoginPage = () => {
     const type = passwordField.type === "password" ? "text" : "password";
     passwordField.type = type;
   });
+
   return container;
 };
 export default LoginPage;
