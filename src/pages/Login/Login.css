@@ -56,4 +56,29 @@ flex-direction: column;
   right: 20px;
   cursor: pointer;
 }
+.login-button{
+  width: 360px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color:var(--white-color);
+  margin-top:32px;
+}
 
+.google-button{
+  width: 360px;
+  height: 40px;
+  border-radius:6px;
+  background-color: var(--black-color);
+  color:var(--white-color);
+  margin-top:30.5px;
+}
+.account{
+  color:var(--black-color);
+}
+.login-footer{
+  display: flex;
+   justify-content: center;
+  gap:8px;
+  margin-top:24px;
+}
