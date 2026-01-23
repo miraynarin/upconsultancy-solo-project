@@ -16,14 +16,18 @@ const LoginPage = () => {
     
      <div class="password-wrapper">
      <input type="password" id="password" placeholder="Enter Password" />
-     <span id="togglePassword" class="eye-icon">👁️</span>
+     <span id="togglePassword" class="eye-icon">
+     <img src="./images/eye-icon-open.svg" alt="Toggle Password" />
+     </span>
      </div>
+     <div class="remember-row">
      <label class="remember-checkbox">
-     <input type="checkbox"/>
-     <span class="checkbox-"btn"></span>
-     </label>
+     <input type="checkbox" id="rememberToggle" />
+     <span class="toggle-switch"></span>
      <span class="remember-text">Remember me</span>
+     </label>
      <a href="#" class="forgot-password">Forgot password?</a>
+     </div>
      </form>
      <button class="login-button">Login</button>
      <button class="google-button">Or Login with Google</button>
@@ -33,13 +37,17 @@ const LoginPage = () => {
      </div>
    </div>
    </section>`;
-
-  const togglePassword = container.querySelector("#togglePassword");
+  const togglePassword = container.querySelector("#togglePassword img");
   const passwordField = container.querySelector("#password");
 
   togglePassword.addEventListener("click", function () {
-    const type = passwordField.type === "password" ? "text" : "password";
-    passwordField.type = type;
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+      togglePassword.src = "./images/eye-icon-off.svg"; // kapalı göz
+    } else {
+      passwordField.type = "password";
+      togglePassword.src = "./images/eye-icon-open.svg"; // açık göz
+    }
   });
 
   return container;
