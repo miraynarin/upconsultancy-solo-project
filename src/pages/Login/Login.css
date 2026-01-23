@@ -23,6 +23,7 @@
 .right-area form{
 display: flex;
 flex-direction: column;
+gap: 10px;
 }
 .right-area form input{
   display: block;
@@ -65,7 +66,7 @@ flex-direction: column;
   border-radius: 8px;
   background-color: var(--primary-color);
   color:var(--white-color);
-  margin-top:32px;
+  
 }
 
 .google-button{
@@ -84,4 +85,68 @@ flex-direction: column;
    justify-content: center;
   gap:8px;
   margin-top:24px;
+}
+.remember-row {
+  display: flex;
+  align-items: center;          /* dikey ortala */
+  justify-content: space-between; /* soldaki label, sağdaki link */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Toggle + yazıyı yatay hizala */
+.remember-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* toggle ve yazı arası boşluk */
+}
+
+/* Toggle switch */
+#rememberToggle {
+  display: none; /* default checkbox gizle */
+}
+
+.toggle-switch {
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-switch::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+
+/* Toggle açık olduğunda sağa kaydır */
+#rememberToggle:checked + .toggle-switch::before {
+  transform: translateX(20px);
+  background-color: white;
+}
+
+/* Toggle arkaplan değişimi */
+#rememberToggle:checked + .toggle-switch {
+  background: var(--primary-color);
+}
+
+/* Forgot password sağa */
+.forgot-password {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 12px;
+}
+.remember-row{
+  color:var(--black-color);
+  font-size:12px;
+  margin-bottom: 8px;
 }
