@@ -1,5 +1,4 @@
 import "./Services.css";
-// services.js
 
 export const servicesData = [
   {
@@ -52,32 +51,36 @@ export const servicesData = [
   },
 ];
 
-// ServicePage fonksiyonu
 const ServicePage = () => {
   const container = document.createElement("div");
   container.className = "services-container";
 
-  // Başlık
+  /* const mainTitle = document.createElement("h1");
+  title.className = "services-mainTitle";
+  title.textContent = "Services";
+  container.appendChild(mainTitle); */
+
   const title = document.createElement("h2");
   title.className = "services-title";
   title.textContent = "How Can Our Best Services Help Your Business?";
   container.appendChild(title);
 
-  // Her bir hizmeti döngü ile oluştur
+  //Her bir alanı başlığı döngü ile oluşturmak için
   servicesData.forEach((service, index) => {
     const card = document.createElement("div");
     card.className = "service-card";
-    if (index % 2 === 1) card.classList.add("reverse"); // her diğer kartı ters sırala
+    if (index % 2 === 1) card.classList.add("reverse"); //kartları ters sıralaması için
 
-    // Metin
     const textDiv = document.createElement("div");
     textDiv.className = "service-text";
 
-    // icon
     const iconImg = document.createElement("img");
     iconImg.src = service.icon;
     iconImg.alt = `${service.title} icon`;
     iconImg.className = "service-icon";
+
+    const textWrapper = document.createElement("div");
+    textWrapper.className = "service-text-wrapper";
 
     const h3 = document.createElement("h3");
     h3.textContent = service.title;
@@ -89,7 +92,6 @@ const ServicePage = () => {
     textDiv.appendChild(h3);
     textDiv.appendChild(p);
 
-    // Görsel
     const imgDiv = document.createElement("div");
     imgDiv.className = "service-image";
 
@@ -99,11 +101,9 @@ const ServicePage = () => {
 
     imgDiv.appendChild(img);
 
-    // Kart yapısı
     card.appendChild(textDiv);
     card.appendChild(imgDiv);
 
-    // Container içine ekle
     container.appendChild(card);
   });
 
