@@ -1,4 +1,5 @@
 import "./Services.css";
+import EndSection from "../../section/EndSection/EndSection.js";
 
 export const servicesData = [
   {
@@ -106,6 +107,8 @@ const ServicePage = () => {
 
     container.appendChild(card);
   });
+  // FAQ (EndSection) ekle
+  container.appendChild(EndSection());
 
   return container;
 };

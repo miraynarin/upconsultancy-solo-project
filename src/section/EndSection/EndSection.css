@@ -55,6 +55,17 @@
     margin-top:30px;
     
 }
+/* Açılmamış hali normal */
+.question summary .back-icon {
+    transition: transform 0.3s ease; 
+    transform: rotate(0deg);
+}
+
+/* Açıldığında: 90 derece döndür */
+.question[open] summary .back-icon {
+    transform: rotate(90deg);
+}
+
 @media (max-width: 768px) {
     .faq-section {
         margin: 20px auto;
