@@ -1,0 +1,43 @@
+.contant-section {
+   margin: 40px auto;
+   max-width: 1200px;
+   width: 100%;
+}
+.contant-title{
+    font-size:18px;
+    color:var(--primary-color);
+    text-align: center;
+    font-family: var(--primary-font);
+}
+.contant-text{
+    font-size:32px;
+    color:var(--black-color);
+    font-family: var(--secondary-font);
+    text-align:center;
+}
+.contant-row {
+  display: flex;
+  gap: 37px;
+  margin-top:30px;
+ 
+}
+
+.name{
+     border: 1px solid var(--border-color);
+     border-radius:8px;
+     width: 570px;
+     height: 56px;
+}
+.email{
+      border: 1px solid var(--border-color);
+     border-radius:8px;
+     width: 570px;
+     height: 56px;
+     
+}
+.message{
+       border: 1px solid var(--border-color);
+     border-radius:8px;
+     width: 1180px;
+     height: 146px;
+}
