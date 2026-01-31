@@ -20,6 +20,7 @@ const HomePage = () => {
   const pricing = Pricing();
   const endSection = EndSection();
   const footer = Footer();
+
   container.appendChild(navbar);
   container.appendChild(heroSection);
   container.appendChild(services);
@@ -29,6 +30,7 @@ const HomePage = () => {
   container.appendChild(pricing);
   container.appendChild(endSection);
   container.appendChild(footer);
+
   return container;
 };
 export default HomePage;
