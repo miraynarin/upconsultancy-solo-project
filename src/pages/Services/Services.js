@@ -1,6 +1,6 @@
 import "./Services.css";
 import EndSection from "../../section/EndSection/EndSection.js";
-import ContactSection from "../../section/ContantSection/ContantSection.js";
+import ContactSection from "../../section/ContactSection/ContactSection.js";
 
 export const servicesData = [
   {
@@ -9,7 +9,7 @@ export const servicesData = [
     description:
       "We pride ourselves on delivering high-quality work quickly and efficiently. Our team of experts provides precise consultation tailored to your business needs, ensuring that every project is completed on time without compromising on quality. From planning to execution, we focus on accuracy, innovation, and actionable insights to help you achieve measurable results. We analyze your business requirements thoroughly and offer solutions that save time, reduce errors, and optimize resources, allowing you to make informed decisions with confidence.",
     imageUrl: "./images/services-page-1.svg",
-    icon: "#",
+    icon: "./images/clock-icon.svg",
   },
   {
     id: 2,
@@ -57,14 +57,14 @@ const ServicePage = () => {
   const container = document.createElement("div");
   container.className = "services-container";
 
-  /* const mainTitle = document.createElement("h1");
-  title.className = "services-mainTitle";
-  title.textContent = "Services";
-  container.appendChild(mainTitle); */
+  const mainTitle = document.createElement("h1");
+  mainTitle.className = "services-mainTitle";
+  mainTitle.textContent = "Services";
+  container.appendChild(mainTitle);
 
   const title = document.createElement("h2");
   title.className = "services-title";
-  title.textContent = "How Can Our Best Services Help Your Business?";
+  title.innerHTML = "How Can Our Best Services Help <br> Your Business?";
   container.appendChild(title);
 
   //Her bir alanı başlığı döngü ile oluşturmak için
@@ -91,8 +91,9 @@ const ServicePage = () => {
     p.textContent = service.description;
 
     textDiv.appendChild(iconImg);
-    textDiv.appendChild(h3);
-    textDiv.appendChild(p);
+    textWrapper.appendChild(h3);
+    textWrapper.appendChild(p);
+    textDiv.appendChild(textWrapper);
 
     const imgDiv = document.createElement("div");
     imgDiv.className = "service-image";
