@@ -1,21 +1,21 @@
-.contant-section {
+.contact-section {
    margin: 40px auto;
    max-width: 1200px;
    width: 100%;
 }
-.contant-title{
+.contact-title{
     font-size:18px;
     color:var(--primary-color);
     text-align: center;
     font-family: var(--primary-font);
 }
-.contant-text{
+.contact-text{
     font-size:32px;
     color:var(--black-color);
     font-family: var(--secondary-font);
     text-align:center;
 }
-.contant-row {
+.contact-row {
   display: flex;
   gap: 37px;
   margin-top:30px;
@@ -25,19 +25,30 @@
 .name{
      border: 1px solid var(--border-color);
      border-radius:8px;
-     width: 570px;
+     width: 100%;
      height: 56px;
+     padding:10px;
 }
-.email{
+.contact-email{
       border: 1px solid var(--border-color);
      border-radius:8px;
-     width: 570px;
+     width: 100%;
      height: 56px;
-     
+     padding:10px;
 }
 .message{
-       border: 1px solid var(--border-color);
+     border: 1px solid var(--border-color);
      border-radius:8px;
-     width: 1180px;
+     width: 100%;
      height: 146px;
+     padding:10px;
+     margin-top:20px;
+}
+.contact-button{
+     background-color: var(--primary-color);
+     color:var(--white-color);
+     width: 256px;
+     height: 54px;
+     border-radius: 8px;
+     margin-top:30px;
 }
