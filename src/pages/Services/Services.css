@@ -1,9 +1,11 @@
 /* services.css */
+
+
 .services-mainTitle{
   color:var(--primary-color);
   font-size: 18px;
   font-family: var(--primary-font);
-  
+  margin-top: 0;
 }
 
 
