@@ -1,6 +1,7 @@
 import "./Services.css";
 import EndSection from "../../section/EndSection/EndSection.js";
 import ContactSection from "../../section/ContactSection/ContactSection.js";
+import Navbar from "../../components/Navbar/Navbar.js";
 
 export const servicesData = [
   {
@@ -54,6 +55,10 @@ export const servicesData = [
 ];
 
 const ServicePage = () => {
+  const servicesContainer = document.createElement("div");
+  const navbar = Navbar();
+  servicesContainer.appendChild(navbar);
+
   const container = document.createElement("div");
   container.className = "services-container";
 
@@ -109,12 +114,15 @@ const ServicePage = () => {
 
     container.appendChild(card);
   });
+
   // FAQ (EndSection) ekle
   container.appendChild(EndSection());
   // Contanct Section ekle
   container.appendChild(ContactSection());
+  //navbar'ın sayfaya import'u için yeni bir div oluşturup aldık
+  servicesContainer.appendChild(container);
 
-  return container;
+  return servicesContainer;
 };
 
 export default ServicePage;
