@@ -1,0 +1,59 @@
+
+ .newsletter-container {
+  background-color: var(--primary-color);
+  display: flex;
+  height: 356px;
+  justify-content: space-between; /* sol ve sağ bloklar arası boşluk */
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px;
+  gap: 40px;
+}
+
+.newsletter-left {
+  flex: 1;
+}
+
+.newsletter-title {
+  font-size: 36px;
+  color:var(--white-color);
+  margin-bottom: 20px;
+  font-family: var(--secondary-font);
+}
+
+.newsletter-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color:var(--gray-light-color);
+}
+
+.newsletter-right {
+  display: flex;
+
+  flex: 1;
+  justify-content: flex-end; 
+}
+
+.newsletter-email {
+    background-color:var(--green-color);
+  width: 416px;
+  height: 42px;
+  padding: 27px 35px;
+  border-radius: 6px 0 0 6px; /* sadece sol köşe yuvarlak */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.newsletter-button {
+    width: 144px;
+  height: 42px;
+ padding: 28px 40px;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 0 6px 6px 0; /* sadece sağ köşe yuvarlak */
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 8px;
+}
