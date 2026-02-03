@@ -33,18 +33,17 @@
       
 }
 @media (max-width: 768px) {
-  .contactInfo-container {
-    flex-direction: column;   
-    gap: 40px;
+  .newsletter-container {
+    flex-direction: column; /* Sol metin yukarı, input/button aşağı */
+    align-items: flex-start;
   }
 
-  .contactInfo-left {
-    margin-left: 0;     
-    max-width: 100%;
-  }
-
-  .contactInfo-right {
+  .newsletter-right {
     width: 100%;
-    gap: 40px;          
+    display: flex;
+    justify-content: flex-start;
+    gap: 0;
+    flex-wrap: nowrap; /* alt alta geçmeyi engeller */
   }
+
 }

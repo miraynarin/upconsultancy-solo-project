@@ -3,7 +3,7 @@
   background-color: var(--primary-color);
   display: flex;
   height: 356px;
-  justify-content: space-between; /* sol ve sağ bloklar arası boşluk */
+  justify-content: space-between; 
   align-items: center;
   margin: 0 auto;
   padding: 40px;
@@ -56,4 +56,23 @@
   font-size: 16px;
   cursor: pointer;
   line-height: 8px;
+}
+@media (max-width: 768px) {
+  .newsletter-container {
+    flex-direction: column; /* Sol metin yukarı, input/button aşağı */
+    align-items: flex-start;
+  }
+
+  .newsletter-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 0;
+    flex-wrap: nowrap; /* input ve button yan yana */
+  }
+
+ 
+  .newsletter-button {
+    flex: 0 0 144px; /* button sabit genişlik */
+  }
 }
