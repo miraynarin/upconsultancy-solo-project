@@ -3,6 +3,7 @@ import EndSection from "../../section/EndSection/EndSection.js";
 import ContactSection from "../../section/ContactSection/ContactSection.js";
 import Navbar from "../../components/Navbar/Navbar.js";
 import ContactInfo from "../../section/ContactInfo/ContactInfo.js";
+import NewsletterSection from "../../section/NewsletterSection/NewsletterSection.js";
 
 export const servicesData = [
   {
@@ -124,6 +125,7 @@ const ServicePage = () => {
   //navbar'ın sayfaya import'u için yeni bir div oluşturup aldık
   servicesContainer.appendChild(container);
   container.appendChild(ContactInfo());
+  servicesContainer.appendChild(NewsletterSection());
   return servicesContainer;
 };
 
