@@ -32,3 +32,19 @@
   max-width: 400px; 
       
 }
+@media (max-width: 768px) {
+  .contactInfo-container {
+    flex-direction: column;   
+    gap: 40px;
+  }
+
+  .contactInfo-left {
+    margin-left: 0;     
+    max-width: 100%;
+  }
+
+  .contactInfo-right {
+    width: 100%;
+    gap: 40px;          
+  }
+}
