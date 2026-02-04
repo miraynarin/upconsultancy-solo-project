@@ -4,6 +4,7 @@ import ContactSection from "../../section/ContactSection/ContactSection.js";
 import Navbar from "../../components/Navbar/Navbar.js";
 import ContactInfo from "../../section/ContactInfo/ContactInfo.js";
 import NewsletterSection from "../../section/NewsletterSection/NewsletterSection.js";
+import Footer from "../../section/Footer/Footer.js";
 
 export const servicesData = [
   {
@@ -126,6 +127,7 @@ const ServicePage = () => {
   servicesContainer.appendChild(container);
   container.appendChild(ContactInfo());
   servicesContainer.appendChild(NewsletterSection());
+  servicesContainer.appendChild(Footer());
   return servicesContainer;
 };
 
