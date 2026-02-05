@@ -11,7 +11,7 @@ const Navbar = () => {
             <div class="menu">
                 <a class="frame" href="/services">Services</a>
                 <a class="frame" href="/pricing">Pricing</a>
-                <a class="frame" href="#">Blog</a>
+                <a class="frame" href="/blog">Blog</a>
                 <a class="frame" href="/login">Login</a>
             </div>
             
