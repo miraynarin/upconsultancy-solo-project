@@ -1,0 +1,199 @@
+/* =====================
+   PAGE CONTAINER
+===================== */
+.blogpage-container {
+  margin: 40px auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.blogpage-container h1 {
+  font-size: 18px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 500;
+}
+
+.blogpage-container h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--black-color);
+  font-family: var(--secondary-font);
+}
+
+
+
+.blog-section {
+  width: 100%;
+  max-width: 1200px;
+  height: 482px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recent-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black-color);
+  font-family: var(--secondary-font);
+}
+/* =====================
+   GRID KONTEYNER
+===================== */
+.blog-grid {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  height: 542px; /* üstteki 3 kartın yüksekliği */
+}
+
+/* =====================
+   SOL KOLON
+===================== */
+.blog-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* SOLDAKİ BÜYÜK KART */
+.blog-left .blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.blog-left .blog-card img {
+  width: 100%;
+  height: 232px;
+  object-fit: cover;
+}
+
+.blog-left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.blog-left-meta {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 12px;
+}
+
+.blog-left-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 12px;
+  color: var(--black-color);
+}
+
+.blog-left-content p {
+  font-size: 16px;
+  color: var(--dark-gray);
+  margin-top: 12px;
+}
+
+/* =====================
+   SAĞ KOLON
+===================== */
+.blog-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* SAĞDAKİ KÜÇÜK KART */
+.blog-right .blog-card {
+  display: flex;
+  gap: 16px;
+  height: 200px;
+}
+
+.blog-right .blog-card img {
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* SAĞ KÜÇÜK KART İÇERİĞİ */
+.blog-right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.blog-right-meta {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 4px;
+}
+
+.blog-right-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--black-color);
+}
+
+.blog-right-content p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--dark-gray);
+}
+
+/* =====================
+   BOTTOM KART
+===================== */
+.blog-bottom {
+  margin-top: 40px;
+}
+
+.blog-bottom .blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.blog-bottom .blog-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .blog-grid {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .blog-left .blog-card img,
+  .blog-right .blog-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-right .blog-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .blog-right-content {
+    margin-top: 8px;
+  }
+}
