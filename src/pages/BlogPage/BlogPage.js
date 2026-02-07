@@ -2,7 +2,7 @@ import "./BlogPage.css";
 import Navbar from "../../components/Navbar/Navbar.js";
 import Footer from "../../section/Footer/Footer.js";
 
-// Blog verisi
+// Blog
 export const blogData = [
   {
     id: 1,
@@ -53,7 +53,7 @@ const BlogPage = () => {
   const page = document.createElement("div");
   page.className = "blogpage-container";
 
-  /* ===== HEADERS ===== */
+  /*headers*/
   const h1 = document.createElement("h1");
   h1.textContent = "Blog";
 
@@ -68,7 +68,7 @@ const BlogPage = () => {
   recent.className = "recent-title";
   recent.textContent = "Recent blog posts";
 
-  /* ===== GRID ===== */
+  /*kartlar*/
   const grid = document.createElement("div");
   grid.className = "blog-grid";
 
@@ -78,10 +78,13 @@ const BlogPage = () => {
   const right = document.createElement("div");
   right.className = "blog-right";
 
+  const blogBottom = document.createElement("div");
+  blogBottom.className = "blog-bottom-section";
+
   const bottom = document.createElement("div");
   bottom.className = "blog-bottom";
 
-  /* ===== BLOG CARDS (SERVICES STYLE) ===== */
+  /* blog cards */
   blogData.forEach((item) => {
     const card = document.createElement("div");
     card.className = "blog-card";
@@ -112,10 +115,10 @@ const BlogPage = () => {
     } else if (item.layout === "small") {
       // Sağ küçük kartlar için
       const content = document.createElement("div");
-      content.className = "blog-right-content"; // Sağ kartlara özel
+      content.className = "blog-right-content";
 
       const meta = document.createElement("span");
-      meta.className = "blog-right-meta"; // Sağ kart meta
+      meta.className = "blog-right-meta";
       meta.textContent = `${item.author} • ${item.date}`;
 
       const title = document.createElement("h3");
@@ -128,6 +131,21 @@ const BlogPage = () => {
       card.append(img, content);
       right.appendChild(card);
     } else if (item.layout === "horizontal") {
+      const content = document.createElement("div");
+      content.className = "blog-bottom-content";
+
+      const meta = document.createElement("span");
+      meta.className = "blog-bottom-meta";
+      meta.textContent = `${item.author} • ${item.date}`;
+
+      const title = document.createElement("h3");
+      title.textContent = item.title;
+
+      const desc = document.createElement("p");
+      desc.textContent = item.description;
+
+      content.append(meta, title, desc);
+      card.append(img, content);
       bottom.appendChild(card);
     }
   });
@@ -135,8 +153,8 @@ const BlogPage = () => {
   grid.append(left, right);
 
   blogSection.append(recent, grid);
-
-  page.append(h1, h2, blogSection, bottom);
+  blogBottom.appendChild(bottom);
+  page.append(h1, h2, blogSection, blogBottom);
 
   blogContainer.appendChild(page);
   blogContainer.appendChild(Footer());

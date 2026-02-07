@@ -1,6 +1,3 @@
-/* =====================
-   PAGE CONTAINER
-===================== */
 .blogpage-container {
   margin: 40px auto;
   max-width: 1200px;
@@ -24,8 +21,6 @@
   font-family: var(--secondary-font);
 }
 
-
-
 .blog-section {
   width: 100%;
   max-width: 1200px;
@@ -42,9 +37,7 @@
   color: var(--black-color);
   font-family: var(--secondary-font);
 }
-/* =====================
-   GRID KONTEYNER
-===================== */
+
 .blog-grid {
   display: flex;
   gap: 24px;
@@ -52,9 +45,6 @@
   height: 542px; /* üstteki 3 kartın yüksekliği */
 }
 
-/* =====================
-   SOL KOLON
-===================== */
 .blog-left {
   flex: 1;
   display: flex;
@@ -62,7 +52,6 @@
   gap: 24px;
 }
 
-/* SOLDAKİ BÜYÜK KART */
 .blog-left .blog-card {
   display: flex;
   flex-direction: column;
@@ -101,9 +90,6 @@
   margin-top: 12px;
 }
 
-/* =====================
-   SAĞ KOLON
-===================== */
 .blog-right {
   flex: 1;
   display: flex;
@@ -111,7 +97,6 @@
   gap: 24px;
 }
 
-/* SAĞDAKİ KÜÇÜK KART */
 .blog-right .blog-card {
   display: flex;
   gap: 16px;
@@ -125,7 +110,6 @@
   flex-shrink: 0;
 }
 
-/* SAĞ KÜÇÜK KART İÇERİĞİ */
 .blog-right-content {
   display: flex;
   flex-direction: column;
@@ -154,46 +138,106 @@
   color: var(--dark-gray);
 }
 
-/* =====================
-   BOTTOM KART
-===================== */
+.blog-bottom-content{
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  width: 100%;
+  height: 306px;
+}
+
+.blog-bottom-section {
+  width: 100%;
+  height: 306px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .blog-bottom {
-  margin-top: 40px;
+  width: 100%;
+  max-width: 1200px;
+  height: 246px;
+  display: flex;
+  align-items: center;
 }
 
 .blog-bottom .blog-card {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  gap: 24px;
+  width: 100%;
+  margin-top:50px;
+  color:black;
 }
 
 .blog-bottom .blog-card img {
   width: 100%;
-  height: auto;
+  height: 246px;
   object-fit: cover;
 }
 
-/* =====================
-   RESPONSIVE
-===================== */
+.blog-bottom-meta {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 4px;
+}
+
+.blog-bottom-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+ 
+  color: var(--black-color);
+}
+
+.blog-bottom-content p {
+  font-size: 16px;
+  font-weight: 400;
+
+  color: var(--dark-gray);
+}
 @media (max-width: 768px) {
-  .blog-grid {
-    flex-direction: column;
-    height: auto;
+  .blog-section,
+  .blog-grid,
+  .blog-bottom-section,
+  .blog-bottom {
+    height: auto !important;
   }
 
-  .blog-left .blog-card img,
-  .blog-right .blog-card img {
+ 
+  .blog-grid {
+    flex-direction: column;
+  }
+
+  
+  .blog-left .blog-card {
+    flex-direction: column;
+  }
+
+  .blog-left img {
     width: 100%;
     height: auto;
   }
 
+ 
   .blog-right .blog-card {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
     height: auto;
   }
 
+  .blog-right img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
   .blog-right-content {
-    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
   }
 }
