@@ -4,9 +4,10 @@
     gap:50px;
     flex-direction: column;
     margin:40px auto;
-    padding:0 20px;
     background-color: var(--white-color);
-     margin-bottom: 0px;
+    margin-bottom: 0px;
+    max-width: 1200px;
+    
 }
 .services-content{
     color:var(--black-color);
@@ -54,6 +55,9 @@
     
 }
 @media (max-width: 1024px) {
+    .services-container{
+        padding: 0 20px;
+    }
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
