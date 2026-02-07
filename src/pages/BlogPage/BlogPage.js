@@ -45,6 +45,68 @@ export const blogData = [
     layout: "horizontal",
   },
 ];
+export const allblogDatas = [
+  {
+    id: 1,
+    title: "Bill Walsh leadership lessons",
+    description:
+      "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
+    imageUrl: "./images/all-blog-1.png",
+    author: "Alec Whitten",
+    date: "1 Jan 2023",
+    layout: "large",
+  },
+  {
+    id: 2,
+    title: "PM mental models",
+    description:
+      "Mental models are simple expressions of complex processes or relationships.",
+    imageUrl: "./images/all-blog-2.png",
+    author: "Demi Wilkinson",
+    date: "1 Jan 2023",
+    layout: "small",
+  },
+  {
+    id: 3,
+    title: "What is Wireframing?",
+    description:
+      "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
+    imageUrl: "./images/all-blog-3.png",
+    author: "Candice Wu",
+    date: "1 Jan 2023",
+    layout: "small",
+  },
+  {
+    id: 4,
+    title: "How collaboration makes us better designers",
+    description:
+      "Collaboration can make our teams stronger, and our individual designs better.",
+    imageUrl: "./images/all-blog-4.png",
+    author: "Natali Craig",
+    date: "1 Jan 2023",
+    layout: "small",
+  },
+  {
+    id: 5,
+    title: "Importance of getting customer feedback",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Quis maecenas elementum platea eros.",
+    imageUrl: "./images/all-blog-5.png",
+    author: "Drew Cano",
+    date: "1 Jan 2023",
+    layout: "small",
+  },
+  {
+    id: 6,
+    title: "Podcast: Creating a better CX Community",
+    description:
+      "Starting a community doesn’t need to be complicated, but how do you get started?",
+    imageUrl: "./images/all-blog-6.png",
+    author: "Orlando Diggs",
+    date: "1 Jan 2023",
+    layout: "small",
+  },
+];
 
 const BlogPage = () => {
   const blogContainer = document.createElement("div");
@@ -157,6 +219,95 @@ const BlogPage = () => {
   page.append(h1, h2, blogSection, blogBottom);
 
   blogContainer.appendChild(page);
+
+  /* All Blog Grid */
+  const allBlogPostSection = document.createElement("div");
+  allBlogPostSection.className = "all-blog-post-section";
+  const allBlogPostTitle = document.createElement("h2");
+  allBlogPostTitle.className = "all-blog-title";
+  allBlogPostTitle.textContent = "All blog posts";
+  allBlogPostSection.appendChild(allBlogPostTitle);
+
+  const allBlogGrid = document.createElement("div");
+  allBlogGrid.className = "all-blog-grid";
+  let currentPage = 1;
+  let starterSlice = 0;
+  let endSlice = 6;
+
+  const renderAllBlogs = () => {
+    allBlogGrid.innerHTML = ""; // eski kartları sil
+
+    allblogDatas.slice(starterSlice, endSlice).forEach((item) => {
+      const card = document.createElement("div");
+      card.className = "all-blog-card";
+
+      const img = document.createElement("img");
+      img.src = item.imageUrl;
+      img.className = "all-blog-card-image";
+      img.alt = item.title;
+
+      const content = document.createElement("div");
+      content.className = "all-blog-card-content";
+
+      const meta = document.createElement("span");
+      meta.className = "all-blog-card-meta";
+      meta.textContent = `${item.author} • ${item.date}`;
+
+      const title = document.createElement("h3");
+      title.textContent = item.title;
+
+      const desc = document.createElement("p");
+      desc.textContent = item.description;
+      content.append(meta, title, desc);
+      card.append(img, content);
+      allBlogGrid.appendChild(card);
+    });
+  };
+
+  renderAllBlogs();
+  allBlogPostSection.appendChild(allBlogGrid);
+
+  const pagination = document.createElement("div");
+  pagination.className = "pagination";
+
+  const prevButton = document.createElement("button");
+  prevButton.textContent = "← Previous";
+  prevButton.className = "pagination-button";
+
+  const nextButton = document.createElement("button");
+  nextButton.textContent = "Next →";
+  nextButton.className = "pagination-button";
+
+  const numberOfPages = Math.ceil(allblogDatas.length / 6);
+
+  prevButton.addEventListener("click", () => {
+    if (currentPage > 1) {
+      currentPage--;
+      starterSlice -= 6;
+      endSlice -= 6;
+      renderAllBlogs();
+    } else {
+      return;
+    }
+  });
+
+  nextButton.addEventListener("click", () => {
+    if (currentPage < numberOfPages) {
+      currentPage++;
+      starterSlice += 6;
+      endSlice += 6;
+      renderAllBlogs();
+    } else {
+      return;
+    }
+  });
+  pagination.appendChild(prevButton);
+
+  pagination.appendChild(nextButton);
+  allBlogPostSection.appendChild(pagination);
+
+  blogContainer.appendChild(allBlogPostSection);
+
   blogContainer.appendChild(Footer());
 
   return blogContainer;
