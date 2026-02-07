@@ -4,8 +4,6 @@
     width: 100%;
 
 }
-
-
 /* THEAD – DÜZ (ÇİZGİ YOK) */
 .pricingpage-table thead th {
   padding: 24px 16px;
@@ -14,8 +12,6 @@
   height: 140px;           
   vertical-align: middle;
 }
-
-
 .pricingpage-header {
   position: relative;
   height: 100%;
@@ -34,7 +30,7 @@
 }
 
 .pricingpage-header button {
-  width: 160px;
+  min-width: 160px;
   height: 44px;
   line-height: 44px;
   border-radius: 6px;
@@ -44,6 +40,7 @@
   font-size: 14px;
   cursor: pointer;
   transition: all 0.2s ease;
+  width: 100%;
 }
 
 .pricingpage-header button:hover {
@@ -96,8 +93,10 @@
   margin: 0 auto; 
 
 }
+
 .pricingpage-table tr:first-child td {
   border-top: none;
+
 }
 .pricingpage-table tr:last-child td {
   border-bottom: none;
@@ -108,6 +107,8 @@
 .pricingpage-table tr td:last-child {
   border-right: none;
 }
+
+
 
 @media screen and (max-width: 768px) {
   .pricingpage-header p {
