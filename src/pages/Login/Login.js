@@ -1,5 +1,5 @@
 import "../../styles/style.css";
-import "../../pages/Login/login.css";
+import "../../pages/Login/Login.css";
 
 const LoginPage = () => {
   const container = document.createElement("div");
